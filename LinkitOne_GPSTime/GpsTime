@@ -1,0 +1,34 @@
+#include <LDateTime.h>
+#include <LGPS.h>
+gpsSentenceInfoStruct info; // 儲存GPS資料
+datetimeInfo t;
+void setup(){
+  Serial.begin(9600);
+  Serial.print("setup");
+  LGPS.powerOn();
+  
+  t.year = 2016;
+  t.mon = 5;
+  t.day = 9;
+  t.hour = 21;
+  t.min = 9;
+  t.sec = 0;
+  LDateTime.setTime(&t);
+}
+void loop(){
+  LDateTime.getTime(&t);
+  Serial.print("year:");
+  Serial.println(t.year);
+  Serial.print("month:");
+  Serial.println(t.mon);
+  Serial.print("day:");
+  Serial.println(t.day);
+  Serial.print("hour:");
+  Serial.println(t.hour);
+  Serial.print("min:");
+  Serial.println(t.min);
+  Serial.print("second:");
+  Serial.println(t.sec);
+  delay(60);
+  //Serial.print((char*)info.GPGGA);
+}
