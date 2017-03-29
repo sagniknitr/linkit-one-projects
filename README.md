@@ -7,6 +7,6 @@ A must have board for all interested in IoT based prouduct development
  
  
 
- [!alt tag](https://cloud.githubusercontent.com/assets/17951883/24439263/cc03974a-146a-11e7-85a1-92880522ed73.jpg)
+ [!alt tag](https://cloud.githubusercontent.com/assets/17951883/24439564/a72657ee-146c-11e7-8d2c-ae5558ea216b.jpg)
   
   
